@@ -1,6 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using ListCompare.Builder;
 
 namespace ListCompare
 {
@@ -20,7 +21,17 @@ namespace ListCompare
     //                     .HavingKey(x => x.ID)
     //                     .Go();
 
+     
     public static class Compare
     {
+        public static HomogeneousBuilder<T> Lists<T>(IEnumerable<T> left, IEnumerable<T> right)
+        {
+            return new HomogeneousBuilder<T>(left, right);
+        }
+
+        public static HeterogeneousBuilder<TLeft, TRight> Lists<TLeft, TRight>(IEnumerable<TLeft> left, IEnumerable<TRight> right)
+        {
+            return new HeterogeneousBuilder<TLeft, TRight>(left, right);
+        }
     }
 }

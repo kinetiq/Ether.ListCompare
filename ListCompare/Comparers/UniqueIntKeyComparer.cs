@@ -19,7 +19,7 @@ namespace ListCompare.Comparers
         private readonly HashSet<int> LeftKeys;
         private readonly HashSet<int> RightKeys;
  
-        public UniqueIntKeyComparer(List<TLeft> left, Func<TLeft, int> leftKeySelector, List<TRight> right, Func<TRight, int> rightKeySelector)
+        public UniqueIntKeyComparer(IEnumerable<TLeft> left, Func<TLeft, int> leftKeySelector, IEnumerable<TRight> right, Func<TRight, int> rightKeySelector)
         {
             // Convert our lists into dictionaries for quick key/value lookup. 
             Right = right.ToDictionary(rightKeySelector);

@@ -15,10 +15,8 @@ namespace ListCompare.Comparers
 
         /// <param name="left">Left-hand side of the comparison.</param>
         /// <param name="right">Right-hand side of the comparison.</param>
-        /// <param name="comparer">Note that we use a lot of LINQ expressions, and they 
-        /// use GetHashCode, and only hit Equals if there's a HashCode conflict. So, you can just 
-        /// return 0 from GetHashCode.
-        /// </param>
+        /// <param name="comparer">Specifying a comparer enables quite a few advanced scenarios, but hopefully we will
+        /// end up with easier solutions for them.</param>
         public HomogenousComparer(IEnumerable<T> left,
                            IEnumerable<T> right,
                            IEqualityComparer<T> comparer = null)
