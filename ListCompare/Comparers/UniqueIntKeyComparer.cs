@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using ListCompare.Extensions;
 
-namespace ListCompare.Comparer
+namespace ListCompare.Comparers
 {
     /// <summary>
     /// List comparer for heterogeneous (different) types that have a common unique int key.

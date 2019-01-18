@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using ListCompare.Comparer;
+using ListCompare.Comparers;
 using ListCompare.Tests.Models;
 using Xunit;
 
