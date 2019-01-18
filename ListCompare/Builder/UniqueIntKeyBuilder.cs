@@ -4,6 +4,9 @@ using ListCompare.Comparers;
 
 namespace ListCompare.Builder
 {
+    /// <summary>
+    /// Part of the fluent interface for setting up comparisons.
+    /// </summary>
     public class UniqueIntKeyBuilder<TLeft, TRight>
     {
         protected internal IEnumerable<TLeft> Left;
@@ -19,6 +22,9 @@ namespace ListCompare.Builder
             Left = left;
         }
 
+        /// <summary>
+        /// Returns the fully configured Comparer.
+        /// </summary>
         public UniqueIntKeyComparer<TLeft, TRight> Go()
         {
             return new UniqueIntKeyComparer<TLeft, TRight>(Left, LeftKeySelector, Right, RightKeySelector);

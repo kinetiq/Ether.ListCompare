@@ -31,25 +31,27 @@ namespace ListCompare.Comparers
         }
 
         /// <summary>
-        /// Get items that appear in both lists.
+        /// Get items that appear in both lists. Because each list is of a different
+        /// type, this specifies returning all items as the type of the left-hand list.
         /// </summary>
         public List<TLeft> CommonItemsAsLeft()
         {          
             var commonKeys = LeftKeys.Intersect(RightKeys)
                 .ToList();
 
-            return Left.FindAny(commonKeys);
+            return Left.FindValuesFor(commonKeys);
         }
 
         /// <summary>
-        /// Get items that appear in both lists.
+        /// Get items that appear in both lists. Because each list is of a different
+        /// type, this specifies returning all items as the type of the right-hand list.
         /// </summary>
         public List<TRight> CommonItemsAsRight()
         {
             var commonKeys = LeftKeys.Intersect(RightKeys)
                 .ToList();
 
-            return Right.FindAny(commonKeys);
+            return Right.FindValuesFor(commonKeys);
         }
 
         /// <summary>
@@ -84,9 +86,9 @@ namespace ListCompare.Comparers
             return result; 
         }
 
-
         /// <summary>
-        /// Get items that only appear in one list. 
+        /// Get items that only appear in one list. Because each list is of a different
+        /// type, and this can return types from both lists, this returns a List of Object.
         /// </summary>
         public List<object> MissingItems()
         {

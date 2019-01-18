@@ -3,6 +3,9 @@ using ListCompare.Comparers;
 
 namespace ListCompare.Builder
 {
+    /// <summary>
+    /// Part of the fluent interface for setting up comparisons.
+    /// </summary>
     public class HomogeneousBuilder<T>
     {
         protected internal IEnumerable<T> Left;
@@ -16,6 +19,9 @@ namespace ListCompare.Builder
             Left = left;
         }
 
+        /// <summary>
+        /// Allows you to specify an IEqualityComparer, which can change the way objects are compared.
+        /// </summary>
         public HomogeneousBuilder<T> WithEqualityComparer(IEqualityComparer<T> equalityComparer)
         {
             EqualityComparer = equalityComparer;
@@ -23,6 +29,9 @@ namespace ListCompare.Builder
             return this;
         }
 
+        /// <summary>
+        /// Returns the fully configured Comparer.
+        /// </summary>
         public HomogenousComparer<T> Go()
         {
             return new HomogenousComparer<T>(Left, Right, EqualityComparer);

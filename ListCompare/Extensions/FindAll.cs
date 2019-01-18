@@ -9,7 +9,7 @@ namespace ListCompare.Extensions
         /// <summary>
         /// Searches dictionary for any keys in the keys collection, and returns whatever it can find.
         /// </summary>
-        public static List<TValue> FindAny<TKey, TValue>(this Dictionary<TKey, TValue> dictionary, List<TKey> keys)
+        public static List<TValue> FindValuesFor<TKey, TValue>(this Dictionary<TKey, TValue> dictionary, List<TKey> keys)
         {
             var result = new List<TValue>();
 

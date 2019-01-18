@@ -9,13 +9,13 @@ namespace ListCompare.Comparers
     /// <typeparam name="T">Type to compare.</typeparam>
     public class HomogenousComparer<T>
     {
-        public List<T> Left;
-        public List<T> Right;
+        public IEnumerable<T> Left;
+        public IEnumerable<T> Right;
         public IEqualityComparer<T> Comparer;
 
         /// <param name="left">Left-hand side of the comparison.</param>
         /// <param name="right">Right-hand side of the comparison.</param>
-        /// <param name="comparer">Specifying a comparer enables quite a few advanced scenarios, but hopefully we will
+        /// <param name="comparer">Specifying an IEqualityComparer enables quite a few advanced scenarios, but hopefully we will
         /// end up with easier solutions for them.</param>
         public HomogenousComparer(IEnumerable<T> left,
                            IEnumerable<T> right,
