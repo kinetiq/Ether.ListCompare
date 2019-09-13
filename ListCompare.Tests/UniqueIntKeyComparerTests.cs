@@ -33,6 +33,11 @@ namespace ListCompare.Tests
             Assert.True(commonRight.Count == 1);
             Assert.Contains(blackbeard, commonRight);
 
+            var common = comparer.CommonItems();
+
+            Assert.True(common.Count == 1);
+            Assert.True(common[0].LeftItem == 3 && common[0].RightItem == blackbeard);
+
             var missing = comparer.MissingItems();
 
             Assert.True(missing.Count == 3);

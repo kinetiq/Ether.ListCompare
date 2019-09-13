@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.1.1-beta</Version>
+    <Version>0.2.0-beta</Version>
     <PackageId>Ether.ListCompare</PackageId>
     <Authors>Brian MacKay</Authors>
     <Product />
@@ -12,8 +12,9 @@
     <PackageLicenseUrl>http://choosealicense.com/licenses/mit/</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/kinetiq/Ether.ListCompare</PackageProjectUrl>
     <PackageTags>C#;.net</PackageTags>
-    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added a handy tool for grabbing both sides of a common match.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
   </PropertyGroup>
 
 </Project>

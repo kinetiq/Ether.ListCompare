@@ -30,6 +30,25 @@ namespace ListCompare.Comparers
             RightKeys = new HashSet<int>(Right.Keys);
         }
 
+        // Get items that appear in both lists. Returns the versions from both lists as a CommonItem.
+        public List<CommonItem<TLeft, TRight>> CommonItems()
+        {
+            var commonKeys = LeftKeys.Intersect(RightKeys)
+                .ToList();
+
+            var result = new List<CommonItem<TLeft, TRight>>();
+
+            foreach (var key in commonKeys)
+            {
+                var item = new CommonItem<TLeft, TRight>(Left[key], Right[key]);
+
+                result.Add(item);
+            }
+
+
+            return result;
+        }
+
         /// <summary>
         /// Get items that appear in both lists. Because each list is of a different
         /// type, this specifies returning all items as the type of the left-hand list.
