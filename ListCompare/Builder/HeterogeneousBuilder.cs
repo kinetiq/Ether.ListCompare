@@ -24,7 +24,7 @@ namespace ListCompare.Builder
         /// </summary>
         /// <param name="leftKeySelector">Expression specifying the key field for the left-hand list.</param>
         /// <param name="rightKeySelector">Expression specifying the key field for the right-hand list.</param>
-        public UniqueIntKeyBuilder<TLeft, TRight> WithUniqueIntegerKey(Func<TLeft, int> leftKeySelector, Func<TRight, int> rightKeySelector)
+        public UniqueIntKeyBuilder<TLeft, TRight> ByIntegerKey(Func<TLeft, int> leftKeySelector, Func<TRight, int> rightKeySelector)
         {
             return new UniqueIntKeyBuilder<TLeft, TRight>(Left, leftKeySelector, Right, rightKeySelector);
         } 

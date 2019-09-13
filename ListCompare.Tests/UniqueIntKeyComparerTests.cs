@@ -18,8 +18,8 @@ namespace ListCompare.Tests
             var pirateList = new List<int>() { 3, 4 };
             var pirates = new List<Pirate> {roberts, silver, blackbeard};
 
-            var comparer = Compare.Lists(pirateList, pirates)
-                .WithUniqueIntegerKey(left => left, right => right.PirateId)
+            var comparer = ListCompare.Compare(pirateList, pirates)
+                .ByIntegerKey(left => left, right => right.PirateId)
                 .Go();
 
             // Common Tests

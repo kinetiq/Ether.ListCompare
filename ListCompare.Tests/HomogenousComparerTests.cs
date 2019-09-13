@@ -18,11 +18,11 @@ namespace ListCompare.Tests
 
             var leftMonkey = new List<Monkey>() { fred, jim, samson }; 
             var rightMonkeys = new List<Monkey>() { jim, marvin };
-
-            var comparer = Compare.Lists<Monkey>(leftMonkey, rightMonkeys)
-                                  .Go();
-
-              
+            
+            var comparer = ListCompare
+                .Compare<Monkey>(leftMonkey, rightMonkeys)
+                .Go();
+            
             // Check items that appear in both lists
             var common = comparer.CommonItems();
 
