@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.136
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListCompare", "ListCompare\ListCompare.csproj", "{DCB3632C-9A23-4824-BA08-5FC5008471A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListComparison", "ListCompare\ListComparison.csproj", "{DCB3632C-9A23-4824-BA08-5FC5008471A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListCompare.Tests", "ListCompare.Tests\ListCompare.Tests.csproj", "{3A0943F9-F784-43E6-8B92-BE61E246B37F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListComparison.Tests", "ListCompare.Tests\ListComparison.Tests.csproj", "{3A0943F9-F784-43E6-8B92-BE61E246B37F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

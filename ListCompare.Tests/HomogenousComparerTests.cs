@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using ListCompare.Comparers;
 using ListCompare.Tests.Models;
 using Xunit;
 
@@ -19,7 +18,7 @@ namespace ListCompare.Tests
             var leftMonkey = new List<Monkey>() { fred, jim, samson }; 
             var rightMonkeys = new List<Monkey>() { jim, marvin };
             
-            var comparer = ListCompare
+            var comparer = ListComparison.ListCompare
                 .Compare<Monkey>(leftMonkey, rightMonkeys)
                 .Go();
             

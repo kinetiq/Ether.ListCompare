@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using ListCompare.Comparers;
+using ListComparison.Comparers;
 
-namespace ListCompare.Builder
+namespace ListComparison.Builder
 {
     /// <summary>
     /// Part of the fluent interface for setting up comparisons.

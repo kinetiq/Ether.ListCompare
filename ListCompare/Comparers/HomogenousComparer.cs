@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace ListCompare.Comparers
+namespace ListComparison.Comparers
 {
     /// <summary>
     /// Helper for comparing two lists of the same type.

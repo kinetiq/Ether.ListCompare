@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using ListCompare.Extensions;
+using ListComparison.Extensions;
 
-namespace ListCompare.Comparers
+namespace ListComparison.Comparers
 {
     /// <summary>
     /// List comparer for heterogeneous (different) types that have a common unique int key.

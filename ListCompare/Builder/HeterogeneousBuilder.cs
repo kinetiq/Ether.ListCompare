@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ListCompare.Builder
+namespace ListComparison.Builder
 {
     /// <summary>
     /// Part of the fluent interface for setting up comparisons.

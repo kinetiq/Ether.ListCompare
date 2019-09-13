@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ListCompare.Comparers
+﻿namespace ListComparison.Comparers
 {
     public class CommonItem<TLeft, TRight>
     {

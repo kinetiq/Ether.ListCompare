@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using ListCompare.Builder;
+using ListComparison.Builder;
 
-namespace ListCompare
+namespace ListComparison
 {
     public static class ListCompare
     {

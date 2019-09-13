@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using ListCompare.Comparers;
 using ListCompare.Tests.Models;
 using Xunit;
 
@@ -18,7 +17,7 @@ namespace ListCompare.Tests
             var pirateList = new List<int>() { 3, 4 };
             var pirates = new List<Pirate> {roberts, silver, blackbeard};
 
-            var comparer = ListCompare.Compare(pirateList, pirates)
+            var comparer = ListComparison.ListCompare.Compare(pirateList, pirates)
                 .ByIntegerKey(left => left, right => right.PirateId)
                 .Go();
 
