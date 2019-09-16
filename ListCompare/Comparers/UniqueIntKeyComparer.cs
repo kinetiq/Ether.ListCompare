@@ -30,7 +30,17 @@ namespace ListComparison.Comparers
             RightKeys = new HashSet<int>(Right.Keys);
         }
 
-        // Get items that appear in both lists. Returns the versions from both lists as a CommonItem.
+        /// <summary>
+        /// Returns true if there are no missing items in either list.
+        /// </summary>
+        public bool NoMissingItems()
+        {
+            return (MissingItems().Count == 0);
+        }
+
+        /// <summary>
+        /// Get items that appear in both lists. Returns the versions from both lists as a CommonItem.
+        /// </summary>
         public List<CommonItem<TLeft, TRight>> CommonItems()
         {
             var commonKeys = LeftKeys.Intersect(RightKeys)

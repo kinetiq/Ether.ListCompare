@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace ListComparison.Comparers
@@ -7,11 +8,11 @@ namespace ListComparison.Comparers
     /// Helper for comparing two lists of the same type.
     /// </summary>
     /// <typeparam name="T">Type to compare.</typeparam>
-    public class HomogenousComparer<T>
+    public class HomogenousComparer<T> 
     {
-        public IEnumerable<T> Left;
-        public IEnumerable<T> Right;
-        public IEqualityComparer<T> Comparer;
+        private readonly IEnumerable<T> Left;
+        private readonly IEnumerable<T> Right;
+        private readonly IEqualityComparer<T> Comparer;
 
         /// <param name="left">Left-hand side of the comparison.</param>
         /// <param name="right">Right-hand side of the comparison.</param>
@@ -30,6 +31,14 @@ namespace ListComparison.Comparers
 
             Right = right.Distinct(Comparer)
                          .ToList();
+        }
+
+        /// <summary>
+        /// Returns true if there are no missing items in either list.
+        /// </summary>
+        public bool NoMissingItems()
+        {
+            return (MissingItems().Count == 0);
         }
 
         /// <summary>
