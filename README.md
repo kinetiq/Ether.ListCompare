@@ -78,14 +78,14 @@ In the real world you might have a list of integers on one side and a list of EF
 What else can this do?
 ==============
 
-When doing reference comparisons, it is possible to specify an IEqualityComparer for certain advanced scenarios.
-
-There are a number of helper methods on the Comparer you should know about: 
+This is the complete API for the Comparer:
 
 * **.CommonItems():** Gets all items that appear in both lists. 
 * **.CommonItemsAsLeft() and .CommonItemsAsRight():** Get items that appear in both lists. Because each list is of a different type, this specifies returning all items as the type from the specified list.
 * **.MissingFromLeft() and .MissingFromRight():** Get items that are missing from one side or the other. This is the most commonly used part of the API.
 * **.MissingItems():** Get all items that only appear in one list.
+
+Also, when doing reference comparisons, it is possible to specify an IEqualityComparer for certain advanced scenarios. 
 
 How is performance?
 ==============
