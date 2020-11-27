@@ -69,9 +69,9 @@ In the real world you might have a list of integers on one side and a list of EF
 		// a list of int, since the left list is a List<int>.
 		// This will contain two items: 1 and 3.
     
-                // Okay, there is a bit of a flaw in this example since, having only the key, we lack some fields we would probably need  to 
-                // create a full-fledged monkey in the database. The point is to show you how to do key comparison, and for that, I declare victory
-                // and must now go make my kids dinner.
+		// Okay, there is a bit of a flaw in this example since, having only the key, we lack some fields we would probably need  to 
+		// create a full-fledged monkey in the database. The point is to show you how to do key comparison, and for that, I declare victory
+		// and must now go make my kids dinner.	
 	}
 
 How is performance?
