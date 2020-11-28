@@ -12,7 +12,7 @@
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/kinetiq/Ether.ListCompare</PackageProjectUrl>
     <PackageTags>C#;.net</PackageTags>
-    <PackageReleaseNotes>Added NoMissingItems().</PackageReleaseNotes>
+    <PackageReleaseNotes>Initial release, after quite some time in production. Added basic documentation.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>1.1.1.0</AssemblyVersion>
     <FileVersion>1.1.1.0</FileVersion>
