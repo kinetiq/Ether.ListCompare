@@ -2,20 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
     <PackageId>Ether.ListCompare</PackageId>
     <Authors>Brian MacKay</Authors>
     <Product />
     <Company>Brian MacKay</Company>
     <Description>Easy tool for comparing lists in C#.</Description>
-    <Copyright>2020</Copyright>
+    <Copyright>2019-2021</Copyright>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/kinetiq/Ether.ListCompare</PackageProjectUrl>
     <PackageTags>C#;.net</PackageTags>
-    <PackageReleaseNotes>Initial release, after quite some time in production. Added basic documentation.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added additional mechanisms for more sophisticated comparisons.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>1.1.1.0</AssemblyVersion>
-    <FileVersion>1.1.1.0</FileVersion>
+    <AssemblyVersion>1.1.2.0</AssemblyVersion>
+    <FileVersion>1.1.2.0</FileVersion>
     <RootNamespace>ListComparison</RootNamespace>
     <AssemblyName>ListComparison</AssemblyName>
     <PackageLicenseFile>license.txt</PackageLicenseFile>
